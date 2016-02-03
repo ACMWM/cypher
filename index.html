@@ -7,13 +7,32 @@
     <!-- Basic Page Needs
     ================================================== -->
         <meta charset="utf-8">
-        <title>TribeHacks</title>
+        <title>tribeHacks</title>
         <meta name="description" content="">
         <!-- Mobile Specific Metas
     ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
          <!-- CSS
          ================================================== -->
         <!-- Bootstrap -->
@@ -66,20 +85,18 @@
                             <li><a href="#logistics" class="page-scroll">Logistics</a> </li>
                             <li><a href="#faq" class="page-scroll">FAQ</a> </li>
                             <li><a href="#sponsor" class="page-scroll">Sponsor</a> </li>
-                            <li><a href="#contactus" class="page-scroll">Contact Us</a> </li>
+                            <!-- <li><a href="#contactus" class="page-scroll">Contact Us</a> </li> -->
                         </ul>
                      </nav>
                 </div><!-- /.container-fluid -->
 </header>
  <!-- Slider start -->
     <section id="home" class="hero landing hero-section">
-        <div class="video-background-container">
-            <video id="homevideo" preload="auto" autoplay muted class="video-background" onended="run();">
+        <div class="video-background-container" id="foo">
+            <!-- <video id="homevideo" preload="auto" autoplay muted class="video-background" onended="run();">
                 <source type="video/mp4" src="videos/video1.mp4" />
-            </video>
+            </video> -->
         </div>
-
-
         <div class="parallax-overlay"></div>
 
         <div class="container">
@@ -88,7 +105,7 @@
                     <h3 class="hero-title"><span>WM</span> Hackathon 2016</h3>
                     <p class="hero-description">April 8-10th, 2016</p>
                     <p class="hero-buttons">
-                         <a href="https://ulisesgiacoman.typeform.com/to/PqadsP" class="typeform-share btn btn btn-dark" data-mode="1" target="_blank">
+                         <a href="https://ulisesgiacoman.typeform.com/to/Y5a3CI" class="typeform-share btn btn btn-dark" data-mode="1" target="_blank">
                             <strong>Register</strong> </i>
                         </a>
                         <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
@@ -286,7 +303,7 @@
                         <div class="panel-heading  p2" role="tab" id="headingTwo">
                           <h4 class="panel-title">
                             <a class="accordion-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Learning Resources & Hardware
+                            Resources & Hardware
                             </a>
                           </h4>
                         </div>
@@ -345,6 +362,13 @@
                         </div>
                 </div>
 
+                <div class="col-md-3 col-sm-6 columns">
+                    <div class="facts-wrap">
+                        <h6>More Questions?</h6>
+                        Shoot us an email at <a href="mailto:wm@tribehacks.com">wm@tribehacks.com</a>
+                        </div>
+                </div>
+
             </div> <!-- Conatainer End -->
         </div>	<!-- Fact div ENd -->
 </section>
@@ -354,91 +378,49 @@
 
 
 <!-- Sponsors Start -->
-<div id="sponsor"></div>
-<div class="middleContainerCream">
-  <h3 class="feature_title text-center sponserino">Past <b>Sponsors</b></h3>
-  <div class="divider"></div>
-  <div class="subMiddleContainer" style="min-height:1130px;">
+<!-- <section id="sponsor"> -->
+    <section id="sponsor">
+    <h3 class="feature_title text-center sponserino">Past <b>Sponsors</b></h3>
+    <h4 class="feature_sub text-center">Interested in sponsoring? <a target="_blank" href="tribehacks_sponsor.pdf"><i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
+    <h4 class="feature_sub text-center">Questions? Email us at <a href="mailto:sponsor@tribehacks.com">sponsor@tribehacks.com</a></h4>
+    <div class="divider"></div>
+        <!-- <div class="facts"> -->
+            <!-- <div class="container"> -->
 
-    <div class="sponsorImages" style="text-align:center;">
-      <div >
-      <a href="http://www.epic.com/"> <img style="width:300px; padding-bottom:20px"src="images/psponsors/epiclogo.png" /> </a>
-      </div>
+              <div id="spon-section">
+                <div class="container">
+                  <div class="spon-row row">
+                    <a href='http://www.epic.com/' class='spon-logo spon-logo-tera' style='background-image:url("images/psponsors/epiclogo.png")'></a>
+                  </div>
 
-    </div>
+                  <div class="spon-row row">
+                    <a href='https://http://www.strsoftware.com/' class='spon-logo spon-logo-giga' style='background-image:url("images/psponsors/STRlogo.png")'></a>
+                    <a href='https://www.teamsnap.com/' class='spon-logo spon-logo-giga' style='background-image:url("images/psponsors/teamsnaplogo.png")'></a>
+                    <a href='https://www.google.com/' class='spon-logo spon-logo-giga' style='background-image:url("images/psponsors/googlelogo.png")'></a>
 
-    <hr width="100%">
+                  </div>
 
-    <div class="sponsorImages" style="float:none;width:800px;margin:auto;text-align:center">
-      <div style="float:left;">
-        <a href="http://www.strsoftware.com/"> <img src="images/psponsors/STRlogo.png"/> </a>
-      </div>
-      <div style="float:left;">
-        <a href="http://www.teamsnap.com/"> <img style="padding-top:45px" src="images/psponsors/teamsnaplogo.png"/> </a>
-      </div>
-      <div style="float:left;">
-        <a href="http://www.google.com/"> <img style="padding-top:40px; width:250px; " src="images/psponsors/googlelogo.png"/> </a>
-      </div>
-    </div>
+                  <div class="spon-row row">
+                    <a href='https://sendgrid.com/' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/sendgridlogo.png")'></a>
+                    <a href='https://aiddata.org//' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/aiddatalogo.jpg")'></a>
+                    <a href='http://lob.com/' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/loblogo.jpeg")'></a>
+                    <a href='https://sunlightfoundation.com//' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/sunlightfoundationlogo.png")'></a>
+                    <a href='https://mlh.io/' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/mlhlogo.jpg")'></a>
+                    <a href='http://www.monsterenergy.com' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/monsterlogo.jpg")'></a>
+                    <a href='http://www.readyforce.com/' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/readyforcelogo.jpg")'></a>
+                    <a href='https://www.devpost.com' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/devpostlogo.jpg")'></a>
+                    <a href='http://www.twilio.com/' class='spon-logo spon-logo-mega' style='background-image:url("images/psponsors/twiliologo.png")'></a>
+                    <a href='https://www.squarespace.com//' class='spon-logo spon-logo-mega' style='background-image:url("img/sponsors/mega/squarespacelogo.png")'></a>
 
-    <hr width="100%">
+                  </div>
+                  <h3 class="feature_title text-center sponserino">Our <b>Partners</b></h3>
+                  <div class="divider"></div>
+                  <div class="spon-row row">
 
-    <div class="sponsorImages" style="overflow:hidden;float:none;width:800px;margin:auto;text-align:center">
-      <div style="float:left; ";>
-      <a href="http://sendgrid.com/"> <img style="width:150px; padding-top:25px" src="images/psponsors/sendgridlogo.png"/> </a>
-          </div>
-      <div style="float:left;">
-        <a href="http://www.aiddata.org/"> <img style="padding-top:10px; width:150px" src="images/psponsors/aiddatalogo.jpg"/> </a>
-      </div>
-      <div style="float:left;">
-        <a href="http://www.lob.com/"> <img style="padding-top:10px; width:150px" src="images/psponsors/loblogo.jpeg"/> </a>
-      </div>
-      <div style="float:left;">
-        <a href="http://sunlightfoundation.com/"> <img style="padding-top:10px; width:150px" src="images/psponsors/sunlightfoundationlogo.png"/> </a>
-      </div>
-    </div>
+                    <a href='http://www.swem.wm.edu' class='spon-logo spon-logo-tera' style='background-image:url("images/psponsors/swemlogo.jpg")'></a>
+                  </div>
 
-    <div class="sponsorImages" style="overflow:hidden;float:none;width:1000px;margin:auto;text-align:center">
-      <!--<div style="width:800px;height:300px;float:none;margin:auto;"> -->
-          <div style="float:left;margin:20px;margin-bottom:0px;">
-            <a href="http://mlh.io/"> <img style="width:150px" src="images/psponsors/mlhlogo.jpg"/> </a>
-          </div>
-          <div style="float:left;margin:20px;margin-top:60px;margin-bottom:0px;">
-            <a href="http://monsterenergy.com"> <img style="width:150px" src="images/psponsors/monsterlogo.jpg"/> </a>
-          </div>
-          <div style="float:left;margin:20px;margin-top:30px;margin-bottom:0px;">
-            <a href="http://www.readyforce.com"> <img style="width:150px" src="images/psponsors/readyforcelogo.jpg"/> </a>
-          </div>
-          <div style="float:left;margin:20px;margin-top:80px;margin-bottom:0px;">
-            <a href="http://www.challengepost.com"> <img style="width:175px" src="images/psponsors/challengepostlogo.png"/> </a>
-          </div>
-
-      </div>
-
-      <div class="sponsorImages" style="overflow:hidden;float:none;width:700px;margin:auto;text-align:center">
-          <div style="float:left;margin:20px;">
-            <a href="http://www.twilio.com/"> <img style="width:150px" src="images/psponsors/twiliologo.png"/> </a>
-          </div>
-          <div style="float:left;margin:20px;margin-top:35px;">
-            <a href="http://www.squarespace.com"> <img style="width:150px" src="images/psponsors/squarespacelogo.png"/> </a>
-          </div>
-          <div style="float:left;margin:20px;margin-top:20px;">
-            <a href="http://www.swem.wm.edu/"> <img style="width:150px" src="images/psponsors/swemlogo.jpg"/> </a>
-          </div>
-      </div>
-
-        <!-- <div class="subMiddleHeader" style="padding-top:30px;font-size:30px;padding-bottom:none;">
-      Interested in getting involved with TribeHacks?
-    </div> -->
-    <!-- <div class="createInfo" style="padding-top:0px;">
-      Check out our <a href="sponsor.pdf" style="text-decoration:none;color:green;"> sponsorship packet </a>or contact us at tribehacks@gmail.com.
-    </div> -->
-
-
-    </div>
-
-<!-- Sponsors End -->
-
+                </section>
 <!-- Footer Area Start -->
 
 <section id="footer">
@@ -452,7 +434,6 @@
                             <li><a href="#aboutus">About Us</a></li>
                             <li><a href="#logistics">Logistics</a></li>
                             <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -460,8 +441,8 @@
                     <h3 class="menu_head">Useful Links</h3>
                     <div class="footer_menu">
                         <ul>
-                            <li><a href="#">William and Mary</a></li>
-                            <li><a href="#">Benefits of Sponsoring</a></li>
+                            <li><a href="http://www.wm.edu/" target="_blank">About William and Mary</a></li>
+                            <li><a target="_blank"  href="tribehacks_sponsor.pdf">Benefits of Sponsoring</a></li>
                         </ul>
                     </div>
                 </div>
@@ -469,28 +450,12 @@
                     <h3 class="menu_head">Contact us</h3>
                     <div class="footer_menu_contact">
                         <ul>
-                            <li> <i class="fa fa-home"></i>
-                                <span> McGlothlan Hall </span></li>
+                            <li> <i class="fa fa-envelope-o"></i>
+                                <span><a href="mailto:wm@tribehacks.com">wm@tribehacks.com</a></span></li>
+
                         </ul>
                     </div>
                 </div>
-
-                <!-- <div class="col-md-3 col-sm-6">
-                    <h3 class="menu_head">Tags</h3>
-                    <div class="footer_menu tags">
-                        <a href="#"> Design</a>
-                        <a href="#"> User Interface</a>
-                        <a href="#"> Graphics</a>
-                        <a href="#"> Web Design</a>
-                        <a href="#"> Development</a>
-                        <a href="#"> Asp.net</a>
-                        <a href="#"> Bootstrap</a>
-                        <a href="#"> Joomla</a>
-                        <a href="#"> SEO</a>
-                        <a href="#"> Wordepress</a>
-                    </div>
-                </div> -->
-
             </div>
         </div>
     </div>
@@ -508,10 +473,6 @@
                         <ul class="social-contact list-inline">
                             <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -569,40 +530,46 @@
         <script type="text/javascript" src="js/gmaps.js"></script>
 			<!-- Custom js -->
         <script src="js/custom.js"></script>
-	<script>
-		// Google Map - with support of gmaps.js
-     var map;
-        map = new GMaps({
-          div: '#map',
-          lat: 23.709921,
-          lng: 90.407143,
-          scrollwheel: false,
-          panControl: false,
-          zoomControl: false,
-        });
 
-        map.addMarker({
-          lat: 23.709921,
-          lng: 90.407143,
-          title: 'Themeturn',
-          infoWindow: {
-            content: '<p> ThemeTurn, Dhanmondhi 27</p>'
-          },
-          icon: "images/map1.png"
-        });
-      	</script>
-    <script>
-    video_count =1;
-    videoPlayer = document.getElementById("homevideo");
+        <script type="text/javascript">
 
-    function run(){
+
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+             console.log("mobile");
+             $("#foo").append("<img src='images/banner/space.jpg' alt='Mountain View'>")
+            }
+          else {
+              $("#foo").append("<video id='homevideo' preload='auto' autoplay muted class='video-background' onended='run()';><source type='video/mp4' src='videos/video1.mp4' /></video>")
+              video_count =0;
+              videoPlayer = document.getElementById("homevideo");
+              console.log("desktop");
+              video_count++;
+              if (video_count == 3) video_count = 1;
+              var nextVideo = "videos/video"+video_count+".mp4";
+              videoPlayer.src = nextVideo;
+              videoPlayer.play();
+
+            }
+
+            function run(){
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+           console.log("mobile");
+           videoPlayer.src = "images/banner/overlay.jpg";
+          }
+        else {
+            console.log("desktop");
             video_count++;
-            if (video_count == 4) video_count = 1;
+            if (video_count == 3) video_count = 1;
             var nextVideo = "videos/video"+video_count+".mp4";
             videoPlayer.src = nextVideo;
             videoPlayer.play();
-       };
 
-    </script>
+          }
+
+      };
+
+
+        </script>
+
     </body>
 </html>

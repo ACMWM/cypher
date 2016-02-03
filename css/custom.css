@@ -2476,8 +2476,14 @@ padding: 8px 15px;
     height: 100%;
      background: url("../images/banner/overaly.png")repeat;
 }
+.img-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .video-background{
     width: 100%;
+
 }
 .video-background-container {
     position: absolute;
@@ -2631,6 +2637,7 @@ iframe{
 }
 
 
+
 /*About details
 ==========================*/
 
@@ -2691,3 +2698,8 @@ iframe{
     right: 10px;
     top: -10px;
 }
+.fa-arrow-circle-right{
+  color: #F0B323;
+}
+
+#spon-section{padding-top:100px;background-color:#fff;text-align:center}#spon-section h1{color:#fff}#spon-section .spon-row{text-align:center;display:-webkit-flex;display:flex;justify-content:center;flex-wrap:wrap}#spon-section .spon-logo-tera{min-height:200px;width:400px;max-width:500px}#spon-section .spon-logo-giga{min-height:225px;width:250px;max-width:350px}#spon-section .spon-logo-mega{min-height:150px;width:200px;max-width:300px}#spon-section .spon-logo-kilo{min-height:75px;width:175px;max-width:200px}#spon-section .spon-logo{background-position:center center;background-origin:content-box;background-size:contain;background-repeat:no-repeat;margin-top:20px;padding-left:30px;padding-right:30px;display:inline-block;float:none;text-align:center;margin-left:-4px;flex-grow:1;flex-shrink:1;display:-webkit-flexbox;display:flex}
