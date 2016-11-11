@@ -28,10 +28,13 @@ Version:1.1 */
 @import url(http://fonts.googleapis.com/css?family=Avenir:400,100,300,500,600,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700);
 
+
 /* ----------------------------------------------------------------------------------- */
 /* CSS Reset & Clear
 /*----------------------------------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 html{
     overflow-x: hidden !important;
@@ -61,13 +64,13 @@ a:focus{
 /* Global styles
 ================================================== */
 body{
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight:normal;
     color: #6a6a6a!important;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight:700;
     color: #262626;
 }
@@ -75,9 +78,8 @@ h2{
     font-size:60px;
 }
 h3{
-    font-size:40px;
+    font-size:60px;
     font-weight:400;
-    text-transform:uppercase;
     line-height:60px;
 }
 h4{
@@ -106,7 +108,7 @@ a{
 .feature_title{
     position:relative;
     padding-bottom:10px;
-    color:#F0B323!important;
+    color:#115740!important;
     width: 45%;
     margin: 10px auto;
     font-size: 40px;
@@ -203,6 +205,7 @@ a{
 ================================*/
 .divider{}
 .divider{
+    background: #115740;
     display: block;
     margin: 20px auto;
     content: "";
@@ -252,14 +255,14 @@ section{
 
 }
 .navbar-fixed-top {
-  background-color: #115740;
+  background-color: #D0D3D4;
 }
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0px!important;
 }
 .navbar-brand{
     font-size:40px;
-    background-color: #115740;
+    background-color: #D0D3D4;
 }
 .navbar-brand img{
   height: 180%;
@@ -277,7 +280,7 @@ section{
 }
 
 .navbar-header{
-    background-color: #115740;
+    background-color: #D0D3D4;
 }
 ul.navbar-nav a {
     /*font-weight: 700;*/
@@ -1280,7 +1283,7 @@ padding: 8px 15px;
 }
 .single_table ul li.price {
     font-size: 50px;
-    font-family: "Avenir";
+    font-family: "Lato";
     padding: 35px 0px;
 }
 .single_table ul li.price span{font-size: 30px;}
@@ -1373,23 +1376,23 @@ padding: 8px 15px;
   color: #fff;
 }
 .subMiddleContainer{
-	width:80%;
-	height:400px;
-	margin:auto;
+    width:80%;
+    height:400px;
+    margin:auto;
 }
 .sponsorImages{
-	width:100%;
-	float: left;
+    width:100%;
+    float: left;
 }
 .sponsorImages>div{
-	padding:20px;
+    padding:20px;
 }
 .sponsorImages > div > img{
-	width:200px;
+    width:200px;
 }
 #counter_area{
     color: #FFF;
-    background-color: #F0B323;
+    background-color: #115740;
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -1654,7 +1657,7 @@ padding: 8px 15px;
     background: #fff;
 }
 #contact .feature_title{}
-#contact .divider{color: #fff!important;}
+#contact .divider{color: #115740!important;}
 
 .left_contact{
     color: #E7E7E7;
@@ -1772,13 +1775,13 @@ padding: 8px 15px;
 .footer_top{
     overflow: hidden;
     padding: 30px 0px 50px;
-    border-bottom: 1px solid #115740;
-    background: none repeat scroll 0% 0% #115740;
+    border-bottom: 1px solid #D0D3D4;
+    background: none repeat scroll 0% 0% #D0D3D4;
     color: #AAA;
 }
 .footer_b{
-    background: #115740;
-    border-top: 1px solid #115740;
+    background: #D0D3D4;
+    border-top: 1px solid #D0D3D4;
 }
 .footer_menu li a:before{
     display: inline-block;
@@ -1829,6 +1832,10 @@ padding: 8px 15px;
 }
 .footer_menu_contact li span:hover {
     cursor:pointer;
+}
+
+.text-block{
+    color: #115740!important;
 }
 
 .tags a{
@@ -2402,12 +2409,18 @@ padding: 8px 15px;
     width: 100%;
 }
 
+.hero-image{
+    height: 200%;
+    width: 200%;
+}
+
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background: transparent;
-    color: #F0B323!important;
+    color: #115740!important;
+    text-decoration: underline!important;
 }
 .navbar-inverse .navbar-nav >li> a{
-    color: #eee!important;
+    color: #115740!important;
 
 }
 
@@ -2421,8 +2434,8 @@ padding: 8px 15px;
 }
 
 .hero-title {
-  font-family: Avenir;
-    font-size: 40px;
+  font-family: 'Fira Sans';
+    font-size: 60px;
     line-height: 50px;
     color: #fff;
     font-weight: 600;
@@ -2431,9 +2444,9 @@ padding: 8px 15px;
     color: #F0B323;
 }
 .hero-description {
-    font-family: Avenir;
+    font-family: 'Fira Sans';
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 30px;
     color: #fff;
 }
@@ -2644,6 +2657,21 @@ iframe{
 #about-details .feature_sub, .single-progress label, #about-details .feature_title{
     color: #fff!important;
 }
+
+.logo-small{
+    font-size: 20px;
+    color: #115740!important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.feature_title_small{
+    font-size: 30px!important;
+    padding-bottom: 5px;
+}
+
 #about-details {
     background-color: #F0B323;
 }
