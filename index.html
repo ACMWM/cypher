@@ -96,8 +96,11 @@
 </header>
  <!-- Slider start -->
     <section id="home" class="hero landing hero-section">
-        <img src="assets/images/sky.jpg"
-        <div class="parallax-overlay"></div>
+        <!-- <img src="assets/images/sky.jpg"> -->
+        <div class="video-background-container" id="foo">
+
+        </div>
+        <!-- <div class="parallax-overlay"></div> -->
 
         <div class="container">
             <div class="hero-content text-center">
@@ -274,7 +277,7 @@
 <!-- <section id="sponsor"> -->
     <section id="sponsor">
     <h3 class="feature_title text-center sponserino">Previous <b>Sponsors</b></h3>
-    <h4 class="feature_sub text-center">Interested in sponsoring? <a target="_blank" title="Sponsor TribeHacks" href="sponsor.pdf"><i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
+    <h4 class="feature_sub text-center"><a target="_blank" title="Sponsor TribeHacks" href="sponsor.pdf">Interested in sponsoring? Here's our info. <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
     <h4 class="feature_sub text-center">Questions? Email us at <a href="mailto:tribehacks@gmail.com">tribehacks@gmail.com</a></h4>
     <div class="divider"></div>
         <!-- <div class="facts"> -->
@@ -443,10 +446,10 @@
           }
         else {
             console.log("desktop");
-            video_count++;
-            if (video_count == 3) video_count = 1;
-            var nextVideo = "assets/videos/video"+video_count+".mp4";
-            videoPlayer.src = nextVideo;
+            // video_count++;
+            // if (video_count == 3) video_count = 1;
+            // var nextVideo = "assets/videos/video"+video_count+".mp4";
+            // videoPlayer.src = nextVideo;
             videoPlayer.play();
 
           }

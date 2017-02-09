@@ -2483,6 +2483,8 @@ padding: 8px 15px;
 }
 .video-background{
     width: 100%;
+    position: relative;
+    top: -25%;
 
 }
 .video-background-container {

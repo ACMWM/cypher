@@ -2495,7 +2495,12 @@ padding: 8px 15px;
   margin-right: auto;
 }
 .video-background{
-    width: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
 
 }
 .video-background-container {
