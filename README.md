@@ -1,4 +1,4 @@
-# tribehacks
+# Cypher
 
 For any future site maintainers:
 
