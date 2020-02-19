@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
 :root {
-	--green-lightest: #e8fcf5;
-	--green-light: #c4ffec;
-	--green-standard: #2cb386;
-	
+	--green-lightest: #e0fffe;
+	--green-light: #c0f2f1;
+	--green-standard: #2ca9a5;
 	--grey-light: #dddddd;
 	--grey-dark: #333333;
-	
-	--blue: #009ac9;
+	--blue: #06667b;
 }
 
 body {
