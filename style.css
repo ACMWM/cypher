@@ -17,7 +17,7 @@ body {
 	margin: 0px;
 	color: var(--grey-dark);
 	
-	background-image: url("img/greentriangles.png"), url("img/bluetriangles.png");
+	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
