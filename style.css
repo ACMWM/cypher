@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
 :root {
-	--green-lightest: #e0fffe;
-	--green-light: #c0f2f1;
-	--green-standard: #2ca9a5;
+	--main-lightest: #e0fffe;
+	--main-light: #c0f2f1;
+	--main-standard: #2ca9a5;
 	--grey-light: #dddddd;
 	--grey-dark: #333333;
-	--blue: #06667b;
+	--accent: #06667b;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-	color: var(--green-standard);
+	color: var(--main-standard);
 	font-weight: bold;
 	font-size: 400%;
 	letter-spacing: 5px;
@@ -33,7 +33,7 @@ h1 {
 
 h2, h3 {
 	text-transform: uppercase;
-	color: var(--green-standard);
+	color: var(--main-standard);
 	font-weight: normal;
 	letter-spacing: 2px;
 }
@@ -42,7 +42,7 @@ hr {
 	width: 200px;
 	height: 2px;
 	border: none;
-	background-color: var(--blue);
+	background-color: var(--accent);
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
@@ -111,10 +111,10 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 	background-color: var(--grey-light);
-	color: var(--blue);
+	color: var(--accent);
 	padding: 15px;
 	border-radius: 5px;
-	border-bottom: solid 3px var(--blue);
+	border-bottom: solid 3px var(--accent);
 	margin: 5px;
 	transition: all 0.25s ease;
 }
@@ -124,8 +124,8 @@ a {
 }
 
 .button--big {
-	border-bottom: solid 3px var(--green-standard);
-	color: var(--green-standard);
+	border-bottom: solid 3px var(--main-standard);
+	color: var(--main-standard);
 	font-size: 150%;
 	padding: 20px;
 }
@@ -163,16 +163,16 @@ img {
 }
 
 #schedule tr {
-	background-color: var(--green-light);
+	background-color: var(--main-light);
 }
 
 #schedule tr:nth-child(2n+1) {
-	background-color: var(--green-lightest);
+	background-color: var(--main-lightest);
 }
 
 #schedule tr:first-child {
-	background-color: var(--green-standard);
-	color: var(--green-lightest);
+	background-color: var(--main-standard);
+	color: var(--main-lightest);
 }
 
 #schedule td, #schedule th {
@@ -202,10 +202,10 @@ img {
 }
 
 #faq {
-	background-color: var(--green-standard);
+	background-color: var(--main-standard);
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: var(--green-lightest);
+	color: var(--main-lightest);
 }
 
 #faq h2, #faq h3 {
