@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 DEPLOY="/home/cypher"
 
 # Preferably separate commits but this ensures changes are pushed
