@@ -3,7 +3,7 @@ set -e
 DEPLOY="/home/cypher"
 
 # Preferably separate commits but this ensures changes are pushed
-git commit -a
+git commit -a || true
 git pull
 git push
 
