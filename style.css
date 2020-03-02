@@ -191,13 +191,19 @@ img {
 	height: 125px;
 }
 
+#sponsors__images img.sponsors__smaller {
+	height: 75px;
+}
+
 @media (min-width: 800px) {
 	#sponsors__images img {
 		height: 150px;
 	}
-	
 	#sponsors__images img.sponsors__bigger {
 		height: 175px;
+	}
+	#sponsors__images img.sponsors__smaller {
+		height: 100px;
 	}
 }
 
