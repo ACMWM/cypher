@@ -228,5 +228,6 @@ img {
 }
 #pandemic {
 	font-weight: bold;
-
+	color: red;
+	font-size: 120%;
 }
