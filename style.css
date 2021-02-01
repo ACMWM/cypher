@@ -187,9 +187,8 @@ img {
 	height: 100px;
 }
 
-
 #sponsors__images img.sponsors__bigger {
-	height: 125px;
+	height: 150px;
 }
 
 #sponsors__images img.sponsors__smaller {
@@ -198,7 +197,7 @@ img {
 
 @media (min-width: 800px) {
 	#sponsors__images img {
-		height: 150px;
+		height: 125px;
 	}
 	#sponsors__images img.sponsors__bigger {
 		height: 175px;
