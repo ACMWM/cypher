@@ -9,4 +9,4 @@ git push
 
 rsync -rcvz --delete --exclude='.git*' --exclude='.zfs' \
 	--exclude='deploy.sh' --exclude='README.md' --exclude='CNAME' \
-	./ "joegen@th121-7.cs.wm.edu:$DEPLOY/"
+	./ "bg3.cs.wm.edu:$DEPLOY/"
