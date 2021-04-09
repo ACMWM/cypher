@@ -179,6 +179,10 @@ img {
 	padding: 10px;
 }
 
+#schedule em {
+	font-size: 90%;
+}
+
 #sponsors__images {
 }
 
