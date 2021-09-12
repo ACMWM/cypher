@@ -7,6 +7,15 @@
 	--grey-light: #dddddd;
 	--grey-dark: #333333;
 	--accent: #06667b;
+
+	--width: 60%;
+	--gutter: calc( (100% - var(--width)) / 2 );
+}
+
+@media (max-width: 1500px) {
+	:root {
+		--width: 80%;
+	}
 }
 
 body {
@@ -18,7 +27,7 @@ body {
 	color: var(--grey-dark);
 
 	display: grid;
-	grid-template-columns: 1fr 60% 1fr;
+	grid-template-columns: 1fr var(--width) 1fr;
 	
 	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
 	background-repeat: no-repeat, no-repeat;
@@ -27,25 +36,14 @@ body {
 	background-size: 40vw, 30vw;
 }
 
-@media (max-width: 1500px) {
-	body {
-		grid-template-columns: 1fr 80% 1fr;
-	}
-}
-
-@media (max-width: 1000px) {
-	body {
-		grid-template-columns: 1fr 90% 1fr;
-	}
-}
-
 body > * {
 	grid-column: 2;
 }
 
 .full-bleed {
-	width: 100%;
   	grid-column: 1 / 4;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
 }
 
 h1 {
