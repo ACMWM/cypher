@@ -16,12 +16,29 @@ body {
 	line-height: 36px;
 	margin: 0px;
 	color: var(--grey-dark);
+
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	
 	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
 	background-size: 40vw, 30vw;
+}
+
+
+@media (max-width: 1500px) {
+	body {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1000px) {
+	body {
+		width: 90%;
+	}
 }
 
 h1 {
@@ -51,30 +68,6 @@ a {
 	color: inherit;
 }
 
-.content-container {
-	padding-left: 20%;
-	padding-right: 20%;
-	margin-top: 50px;
-}
-
-.content-container:first-child {
-	margin-top: 0px;
-}
-
-@media (max-width: 1500px) {
-	.content-container {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-}
-
-@media (max-width: 1000px) {
-	.content-container {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-}
-
 @media (min-width: 800px) {
 	.image-container {
 		display: grid;
@@ -90,9 +83,6 @@ a {
 	.image-container__text {
 		margin-left: 50px;
 		margin-right: 50px;
-	}
-
-	.image-container__image {
 	}
 }
 
