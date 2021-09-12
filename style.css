@@ -156,6 +156,10 @@ img {
 	font-size: 90%;
 }
 
+.image-container__image img {
+	height: 250px;
+}
+
 @media (min-width: 800px) {
 	.image-container {
 		display: grid;
@@ -172,11 +176,11 @@ img {
 		margin-left: 50px;
 		margin-right: 50px;
 	}
-}
 
-.image-container__image img {
-	width: 100%;
-	height: auto;
+	.image-container__image img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 #sponsors__images img {
