@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+:root {
+	--main-lightest: #e0fffe;
+	--main-light: #c0f2f1;
+	--main-standard: #2ca9a5;
+	--grey-light: #dddddd;
+	--grey-dark: #333333;
+	--accent: #06667b;
+
+	--width: 60%;
+	--gutter: calc( (100% - var(--width)) / 2 );
+}
+
+@media (max-width: 1500px) {
+	:root {
+		--width: 80%;
+	}
+}
+
+body {
+	text-align: center;
+	font-family: Cabin, sans-serif;
+	font-size: 18px;
+	line-height: 36px;
+	margin: 0px;
+	color: var(--grey-dark);
+
+	display: grid;
+	grid-template-columns: 1fr var(--width) 1fr;
+	
+	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right bottom;
+	background-attachment: fixed, fixed;
+	background-size: 40vw, 30vw;
+}
+
+body > * {
+	grid-column: 2;
+}
+
+.full-bleed {
+  	grid-column: 1 / 4;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+}
+
+h1 {
+	color: var(--main-standard);
+	font-weight: bold;
+	font-size: 400%;
+	letter-spacing: 5px;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	color: var(--main-standard);
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+hr {
+	width: 200px;
+	height: 2px;
+	border: none;
+	background-color: var(--accent);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+a {
+	color: inherit;
+}
+
+.button {
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: var(--grey-light);
+	color: var(--accent);
+	padding: 15px;
+	border-radius: 5px;
+	border-bottom: solid 3px var(--accent);
+	margin: 5px;
+	transition: all 0.25s ease;
+}
+
+.button:hover {
+	transform: translateY(-2px);
+}
+
+.button--big {
+	border-bottom: solid 3px var(--main-standard);
+	color: var(--main-standard);
+	font-size: 150%;
+	padding: 20px;
+}
+
+img {
+	border: solid 2px var(--grey-light);
+	padding: 5px;
+	max-width: 100%;
+}
+
+#start {
+	padding-top: 50px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo {
+	border: none;
+	height: 250px;
+}
+
+.subtitle {
+	font-style: italic;
+}
+
+#schedule {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+#schedule table {
+	border-spacing: 0px;
+	margin: 10px;
+	flex-grow: 1;
+}
+
+#schedule tr {
+	background-color: var(--main-light);
+}
+
+#schedule tr:nth-child(2n+1) {
+	background-color: var(--main-lightest);
+}
+
+#schedule tr:first-child {
+	background-color: var(--main-standard);
+	color: var(--main-lightest);
+}
+
+#schedule td, #schedule th {
+	padding: 10px;
+}
+
+#schedule em {
+	font-size: 90%;
+}
+
+.image-container__image img {
+	height: 250px;
+}
+
+@media (min-width: 800px) {
+	.image-container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100%;
+		align-items: center;
+	}
+
+	.image-container--reversed *:last-child {
+		order: -1;
+	}
+
+	.image-container__text {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.image-container__image img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+#sponsors__images img {
+	margin: 10px;
+	height: 100px;
+}
+
+#sponsors__images img.sponsors__bigger {
+	height: 150px;
+}
+
+#sponsors__images img.sponsors__smaller {
+	height: 75px;
+}
+
+@media (min-width: 800px) {
+	#sponsors__images img {
+		height: 125px;
+	}
+	#sponsors__images img.sponsors__bigger {
+		height: 175px;
+	}
+	#sponsors__images img.sponsors__smaller {
+		height: 100px;
+	}
+}
+
+#faq {
+	background-color: var(--main-standard);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: var(--main-lightest);
+}
+
+#faq h2, #faq h3 {
+	color: white;
+}
+
+#mlh-trust-badge img {
+	border: none;
+	padding: 0px;
+}
+
+#ad {
+	font-style: italic;
+}
+
+#pandemic {
+	font-weight: bold;
+	color: red;
+	font-size: 120%;
+}
