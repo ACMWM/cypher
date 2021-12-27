@@ -29,8 +29,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr var(--width) 1fr;
 
-	background-color: #001a33;
-	/*background-image: url("img/triangles-1.png"), url("img/triangles-2.png");*/
+	background-color: #3b0ba2;
+	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
@@ -118,6 +118,10 @@ img {
 #logo {
 	border: none;
 	height: 250px;
+}
+
+#sublogo {
+	height: 50px;
 }
 
 .subtitle {
