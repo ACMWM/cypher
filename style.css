@@ -3,9 +3,9 @@
 :root {
 	--main-lightest: #e0fffe;
 	--main-light: #c0f2f1;
-	--main-standard: #2ca9a5;
+	--main-standard: #194048;
 	--grey-light: #dddddd;
-	--grey-dark: #333333;
+	--grey-dark: #ffffff;
 	--accent: #06667b;
 
 	--width: 60%;
@@ -28,8 +28,9 @@ body {
 
 	display: grid;
 	grid-template-columns: 1fr var(--width) 1fr;
-	
-	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
+
+	background-color: #001a33;
+	/*background-image: url("img/triangles-1.png"), url("img/triangles-2.png");*/
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
@@ -100,7 +101,7 @@ a {
 }
 
 img {
-	border: solid 2px var(--grey-light);
+	/*: solid 2px var(--grey-light);*/
 	padding: 5px;
 	max-width: 100%;
 }
