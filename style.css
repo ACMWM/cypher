@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
 :root {
-	--main-lightest: #e0fffe;
-	--main-light: #c0f2f1;
-	--main-standard: #00d4ff;
-	--grey-light: #dddddd;
-	--grey-dark: #ffffff;
-	--accent: #06667b;
+	
+	--main-accent-color: #f72585;
+	--button-bg: #3A0CA3;
+	--text-color: #f4f0ff;
+	--text-bold-color: #4CC9F0;
+	--secondary-color: #4CC9F0;
+	--background: #1a054b;
+	--faq-bg: #3A0CA3;
+	--faq-text-color: #f4f0ff;
+	--faq-heading: #f72585;
+	--faq-subheading: #4CC9F0;
+	--schedule-header: #3A0CA3;
+	--schedule-header-color: #f72585;
+	--schedule-row-1: #26086e;
+	--schedule-row-2: #1b054d;
+	--schedule-text-color: #f2fcff;
+	--schedule-time-color: #4CC9F0;
 
 	--width: 60%;
 	--gutter: calc( (100% - var(--width)) / 2 );
@@ -24,13 +35,13 @@ body {
 	font-size: 18px;
 	line-height: 36px;
 	margin: 0px;
-	color: var(--grey-dark);
+	color: var(--text-color);
 
 	display: grid;
 	grid-template-columns: 1fr var(--width) 1fr;
 
-	background-color: #3b0ba2;
-	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
+	background-color: var(--background);
+	/* background-image: url("img/triangles-1.png"), url("img/triangles-2.png"); */
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
@@ -48,7 +59,7 @@ body > * {
 }
 
 h1 {
-	color: var(--main-standard);
+	color: var(--main-accent-color);
 	font-weight: bold;
 	font-size: 400%;
 	letter-spacing: 5px;
@@ -56,16 +67,20 @@ h1 {
 
 h2, h3 {
 	text-transform: uppercase;
-	color: var(--main-standard);
+	color: var(--main-accent-color);
 	font-weight: normal;
 	letter-spacing: 2px;
+}
+
+strong {
+	color: var(--text-bold-color);
 }
 
 hr {
 	width: 200px;
 	height: 2px;
 	border: none;
-	background-color: var(--accent);
+	background-color: var(--secondary-color);
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
@@ -80,11 +95,11 @@ a {
 	letter-spacing: 3px;
 	font-weight: bold;
 	text-decoration: none;
-	background-color: var(--grey-light);
-	color: var(--accent);
+	background-color: var(--button-bg);
+	color: var(--secondary-color);
 	padding: 15px;
 	border-radius: 5px;
-	border-bottom: solid 3px var(--accent);
+	border-bottom: solid 3px var(--secondary-color);
 	margin: 5px;
 	transition: all 0.25s ease;
 }
@@ -94,8 +109,8 @@ a {
 }
 
 .button--big {
-	border-bottom: solid 3px var(--main-standard);
-	color: var(--main-standard);
+	border-bottom: solid 3px var(--main-accent-color);
+	color: var(--main-accent-color);
 	font-size: 150%;
 	padding: 20px;
 }
@@ -116,8 +131,7 @@ img {
 }
 
 #logo {
-	border: none;
-	height: 250px;
+	height: 200px;
 }
 
 #sublogo {
@@ -133,6 +147,7 @@ img {
 	justify-content: space-evenly;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	color: var(--schedule-text-color);
 }
 
 #schedule table {
@@ -142,20 +157,24 @@ img {
 }
 
 #schedule tr {
-	background-color: var(--main-light);
+	background-color: var(--schedule-row-1);
 }
 
 #schedule tr:nth-child(2n+1) {
-	background-color: var(--main-lightest);
+	background-color: var(--schedule-row-2);
 }
 
 #schedule tr:first-child {
-	background-color: var(--main-standard);
-	color: var(--main-lightest);
+	background-color: var(--schedule-header);
+	color: var(--schedule-header-color);
 }
 
 #schedule td, #schedule th {
 	padding: 10px;
+}
+
+#schedule td:first-child {
+	color: var(--schedule-time-color);
 }
 
 #schedule em {
@@ -215,14 +234,18 @@ img {
 }
 
 #faq {
-	background-color: var(--main-standard);
+	background-color: var(--faq-bg);
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: var(--main-lightest);
+	color: var(--faq-text-color);
 }
 
-#faq h2, #faq h3 {
-	color: white;
+#faq h2 {
+	color: var(--faq-heading);
+}
+
+#faq h3 {
+	color: var(--faq-subheading);
 }
 
 #mlh-trust-badge img {
