@@ -3,7 +3,7 @@
 :root {
 	
 	--main-accent-color: #f72585;
-	--button-bg: #3A0CA3;
+	--button-bg: #2f098a;
 	--text-color: #f4f0ff;
 	--text-bold-color: #4CC9F0;
 	--secondary-color: #4CC9F0;
@@ -41,7 +41,7 @@ body {
 	grid-template-columns: 1fr var(--width) 1fr;
 
 	background-color: var(--background);
-	/* background-image: url("img/triangles-1.png"), url("img/triangles-2.png"); */
+	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
