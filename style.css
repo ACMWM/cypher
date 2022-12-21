@@ -7,7 +7,7 @@
 	--text-color: #f4f0ff;
 	--text-bold-color: #4CC9F0;
 	--secondary-color: #4CC9F0;
-	--background: #1a054b;
+	--background: #115740;
 	--faq-bg: #3A0CA3;
 	--faq-text-color: #f4f0ff;
 	--faq-heading: #f72585;
@@ -41,11 +41,11 @@ body {
 	grid-template-columns: 1fr var(--width) 1fr;
 
 	background-color: var(--background);
-	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
+	/* background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
-	background-size: 40vw, 30vw;
+	background-size: 40vw, 30vw; */
 }
 
 body > * {
