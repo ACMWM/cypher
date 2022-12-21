@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+:root {
+	
+	--main-accent-color: #f72585;
+	--button-bg: #2f098a;
+	--text-color: #f4f0ff;
+	--text-bold-color: #4CC9F0;
+	--secondary-color: #4CC9F0;
+	--background: #1a054b;
+	--faq-bg: #3A0CA3;
+	--faq-text-color: #f4f0ff;
+	--faq-heading: #f72585;
+	--faq-subheading: #4CC9F0;
+	--schedule-header: #3A0CA3;
+	--schedule-header-color: #4CC9F0;
+	--schedule-row-1: #26086e;
+	--schedule-row-2: #1b054d;
+	--schedule-text-color: #f2fcff;
+	--schedule-time-color: #4CC9F0;
+
+	--width: 60%;
+	--gutter: calc( (100% - var(--width)) / 2 );
+}
+
+@media (max-width: 1500px) {
+	:root {
+		--width: 80%;
+	}
+}
+
+body {
+	text-align: center;
+	font-family: Cabin, sans-serif;
+	font-size: 18px;
+	line-height: 36px;
+	margin: 0px;
+	color: var(--text-color);
+
+	display: grid;
+	grid-template-columns: 1fr var(--width) 1fr;
+
+	background-color: var(--background);
+	background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right bottom;
+	background-attachment: fixed, fixed;
+	background-size: 40vw, 30vw;
+}
+
+body > * {
+	grid-column: 2;
+}
+
+.full-bleed {
+  	grid-column: 1 / 4;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+}
+
+h1 {
+	color: var(--main-accent-color);
+	font-weight: bold;
+	font-size: 400%;
+	letter-spacing: 5px;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+h2 {
+	color: var(--main-accent-color);
+}
+
+h3 {
+	color: var(--secondary-color);
+}
+
+strong {
+	color: var(--text-bold-color);
+}
+
+hr {
+	width: 200px;
+	height: 2px;
+	border: none;
+	background-color: var(--secondary-color);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+a {
+	color: inherit;
+}
+
+.button {
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: var(--button-bg);
+	color: var(--secondary-color);
+	padding: 15px;
+	border-radius: 5px;
+	border-bottom: solid 3px var(--secondary-color);
+	margin: 5px;
+	transition: all 0.25s ease;
+}
+
+.button:hover {
+	transform: translateY(-2px);
+}
+
+.button--big {
+	border-bottom: solid 3px var(--main-accent-color);
+	color: var(--main-accent-color);
+	font-size: 150%;
+	padding: 20px;
+}
+
+img {
+	/*: solid 2px var(--grey-light);*/
+	padding: 5px;
+	max-width: 100%;
+}
+
+#start {
+	padding-top: 50px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo {
+	height: 200px;
+}
+
+#sublogo {
+	height: 50px;
+}
+
+.subtitle {
+	font-style: italic;
+}
+
+.perks-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style-type: none;
+	gap: 10px;
+
+	width: 100%;
+	max-width: 600px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#schedule {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	color: var(--schedule-text-color);
+}
+
+#schedule table {
+	border-spacing: 0px;
+	margin: 10px;
+	flex-grow: 1;
+}
+
+#schedule tr {
+	background-color: var(--schedule-row-1);
+}
+
+#schedule tr:nth-child(2n+1) {
+	background-color: var(--schedule-row-2);
+}
+
+#schedule tr:first-child {
+	background-color: var(--schedule-header);
+	color: var(--schedule-header-color);
+}
+
+#schedule td, #schedule th {
+	padding: 10px;
+}
+
+#schedule td:first-child {
+	color: var(--schedule-time-color);
+}
+
+#schedule em {
+	font-size: 90%;
+}
+
+.image-container__image img {
+	height: 250px;
+}
+
+@media (min-width: 800px) {
+	.image-container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100%;
+		align-items: center;
+	}
+
+	.image-container--reversed *:last-child {
+		order: -1;
+	}
+
+	.image-container__text {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.image-container__image img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+#sponsors__images img {
+	margin: 10px;
+	height: 100px;
+}
+
+#sponsors__images img.sponsors__bigger {
+	height: 150px;
+}
+
+#sponsors__images img.sponsors__smaller {
+	height: 75px;
+}
+
+@media (min-width: 800px) {
+	#sponsors__images img {
+		height: 125px;
+	}
+	#sponsors__images img.sponsors__bigger {
+		height: 175px;
+	}
+	#sponsors__images img.sponsors__smaller {
+		height: 100px;
+	}
+}
+
+#faq {
+	background-color: var(--faq-bg);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: var(--faq-text-color);
+}
+
+#faq h2 {
+	color: var(--faq-heading);
+}
+
+#faq h3 {
+	color: var(--faq-subheading);
+}
+
+#mlh-trust-badge img {
+	border: none;
+	padding: 0px;
+}
+
+#ad {
+	font-style: italic;
+}
+
+#pandemic {
+	font-weight: bold;
+	color: red;
+	font-size: 120%;
+}
