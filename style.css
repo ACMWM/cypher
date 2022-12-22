@@ -39,21 +39,18 @@ body {
 	margin: 0px;
 	color: var(--text-color);
 
-	display: grid;
-	grid-template-columns: 1fr var(--width) 1fr;
-
-
+	
 	background-color: var(--background);
-	/* background-image: url("img/triangles-1.png"), url("img/triangles-2.png");
+	background-image: url("img/blob1.png"), url("img/blob2.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, right bottom;
 	background-attachment: fixed, fixed;
-	background-size: 40vw, 30vw; */
+	background-size: 30vw, 30vw;
 }
 
-body > * {
+/* body > * {
 	grid-column: 2;
-}
+} */
 
 .full-bleed {
   	grid-column: 1 / 4;
@@ -61,6 +58,14 @@ body > * {
 	padding-right: var(--gutter);
 }
 
+.body-style
+{	
+	display: grid;
+	grid-template-columns: var(--width); 
+	align-content: center;
+	justify-content: center;
+	
+}
 h1 {
 	color: var(--main-accent-color);
 	font-weight: bold;
@@ -124,18 +129,27 @@ a {
 }
 
 .button--big {
-	border-bottom: solid 3px var(--main-accent-color);
-	color: var(--main-accent-color);
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: var(--button-bg);
+	color: var(--secondary-color);
+	padding: 25px;
+	border-radius: 10px;
+	border-bottom: solid 5px var(--secondary-color);
+	margin: 7px;
+	transition: all 0.25s ease;
 	font-size: 150%;
-	padding: 20px;
-}
+	}
 
 img {
 	/*: solid 2px var(--grey-light);*/
 	padding: 5px;
 	max-width: 100%;
 	filter: drop-shadow(10px 10px 10px #183028);
-
+	
 }
 
 #start {
@@ -229,11 +243,13 @@ img {
 	}
 
 	.image-container__text {
+		
 		margin-left: 50px;
 		margin-right: 50px;
 	}
 
 	.image-container__image img {
+	
 		width: 100%;
 		height: auto;
 	}
@@ -293,3 +309,96 @@ img {
 	color: red;
 	font-size: 120%;
 }
+
+.main_menu{
+	float: left;
+	 overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      position: fixed !important;
+      left: 0 !important;
+      top: 0 !important;
+      width: 100%;
+      z-index:1;
+}
+
+.main_menu
+       >	ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #183028;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main_menu > ul > li {
+ float: right;
+    }
+
+
+.main_menu > ul > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.main_menu > ul > li a:hover {
+  background-color: #111;
+}
+
+
+/*
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordian::after {
+	content: "a";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px; 
+	width: 12px;
+	height: 6px;
+	color: #000000;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
