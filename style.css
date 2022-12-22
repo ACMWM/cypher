@@ -335,9 +335,16 @@ img {
   width: 100%;
 }
 
-.main_menu > ul > li {
+.sub_menu_right{
  float: right;
     }
+
+/* .sub_menu_left{
+ float: left;
+ align-items: center;
+  padding:10px 10px;
+    } */
+
 
 
 .main_menu > ul > li a {
