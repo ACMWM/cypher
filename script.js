@@ -1,7 +1,7 @@
 function init() {
   Tabletop.init(
 	  {
-		  key: "https://docs.google.com/spreadsheets/d/1TFrRrBa1fd-Mh-SounwxlfwRn67wNXdau9yHVSZrgQc/pubhtml",
+		  key: "https://docs.google.com/spreadsheets/d/1Zm89-OlunMpeOoMLjmbANzT2NJVojafUjbcXT99nZiw/edit?usp=sharing/pubhtml",
 		  simpleSheet: true
 	  }
   ).then(function(data, tabletop) {
