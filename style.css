@@ -8,6 +8,7 @@
 	--text-bold-color: #f4f0ff;
 	--secondary-color: #789F90;
 	--background: #115740;
+	--background-sheer: #115740B3;
 	--faq-bg: #3A0CA3;
 	--faq-text-color: #f4f0ff;
 	--faq-heading: #f72585;
@@ -414,6 +415,7 @@ img {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	gap: 2rem;
 	margin-bottom: 2em;
@@ -427,4 +429,31 @@ img {
 .large.sponsor-logos img {
 	flex-basis: 40%;
 	width: 15rem;
+}
+
+.sponsor-logos figcaption {
+	background-color: var(--background-sheer);
+	opacity: 0%;
+	width: 100%;
+	border-radius: 1rem;
+	position: absolute;
+	padding: 1rem;
+	top: 50%;
+    left: 50%;
+	transition: opacity 0.5s ease;
+    transform: translate(-50%, -50%);
+}
+
+.sponsor-logos figure:hover figcaption, .sponsor-logos figure:active figcaption {
+	display: block;
+	opacity: 100%;
+}
+
+.sponsor-logos figure {
+	position: relative;
+}
+
+.sponsor-logos figure img {
+	width: 100%;
+	height: auto;
 }
