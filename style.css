@@ -371,7 +371,7 @@ img {
 	filter: drop-shadow(8px 8px 8px #183028);
 }
 
-.flip-card > input[type="checkbox"] {
+.flip-card input[type="checkbox"] {
 	display: none;
 }
 
@@ -384,7 +384,7 @@ img {
 	transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner, .flip-card > input[type="checkbox"]:focus+.flip-card-inner{
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner{
 	transform: rotateY(180deg);
 }
 
