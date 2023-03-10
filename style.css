@@ -321,7 +321,6 @@ img {
 }
 
 .main_menu {
-	float: left;
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
