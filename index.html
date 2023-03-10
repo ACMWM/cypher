@@ -8,9 +8,10 @@
 	<link rel="shortcut icon" href="img/cypher8logogreen.png" type="image/png">
 	<link rel="icon" href="img/clawdius.svg" type="image/svg">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.0/papaparse.js"></script>
+	<script defer src="script.js"></script>
 	<meta name="theme-color" content="#183028">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 	<!--Nice job, puzzler! The answer is RESOURCEFUL-->
 </head>
@@ -30,8 +31,7 @@
 
 			<li><a href="previous.html">Previous Events</a></li>
 
-			<li><a
-					href="https://drive.google.com/file/d/1iF77UaLIFPN0w0gTjIniCEzVLwclGs4s/view?usp=sharing">For
+			<li><a href="https://drive.google.com/file/d/1iF77UaLIFPN0w0gTjIniCEzVLwclGs4s/view?usp=sharing">For
 					Sponsors</a></li>
 
 			<li><a href="#faq-new">FAQ</a></li>
@@ -63,11 +63,11 @@
 			</div>
 
 			<section id="register-button">
-				
-					<a class="big button" href="https://forms.gle/x2Sd25QHHnqtmnYA6">Register Here!</a>
 
-					<br>
-				
+				<a class="big button" href="https://forms.gle/x2Sd25QHHnqtmnYA6">Register Here!</a>
+
+				<br>
+
 			</section>
 			<section id="volunteer-button">
 				<a class="small button" href="https://forms.gle/9EbzDJZeeUk3CfiQA">Volunteer Sign-Up!</a>
@@ -125,12 +125,48 @@
 							alt="A person presenting at Cypher's expo"></p>
 				</div>
 
-				<section id="faq-new">
-					<h2>Schedule and FAQ</h2>
-					<p>Check out last year's <a
-							href="https://docs.google.com/document/d/1DAxL44-90ENc3O_SvnOpQFz3BNNGil5m8SZtuIz2hMw/edit?usp=sharing">day-of
-							document</a> for an idea of our typical schedule and logistics!</p>
+				<section id="schedule">
+					<h2>Schedule</h2>
+					<p>This schedule is tentative and will continue to grow and change as Cypher approaches!</p>
+					<section>
+						<input class="show-schedule" id="show-friday" type="checkbox" />
+						<label for="show-friday">Friday</label>
+						<table id="friday-schedule">
+							<thead>
+								<th>Time</th>
+								<th>Event</th>
+								<th>Location</th>
+							</thead>
+						</table>
+					</section>
+					<section>
+						<input class="show-schedule" id="show-saturday" type="checkbox" />
+						<label for="show-saturday">Saturday</label>
+						<table id="saturday-schedule">
+							<thead>
+								<tr>
+									<th>Time</th>
+									<th>Event</th>
+									<th>Location</th>
+								</tr>
+							</thead>
+						</table>
+					</section>
+					<section>
+						<input class="show-schedule" id="show-sunday" type="checkbox" />
+						<label for="show-sunday">Sunday</label>
+						<table id="sunday-schedule">
+							<thead>
+								<th>Time</th>
+								<th>Event</th>
+								<th>Location</th>
+							</thead>
+						</table>
+					</section>
+				</section>
 
+				<section id="faq-new">
+					<h2>FAQ</h2>
 				</section>
 
 				<section id="flip-cards">

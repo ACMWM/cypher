@@ -14,12 +14,8 @@
 	--faq-text-color: #f4f0ff;
 	--faq-heading: #f72585;
 	--faq-subheading: #4CC9F0;
-	--schedule-header: #3A0CA3;
-	--schedule-header-color: #4CC9F0;
-	--schedule-row-1: #26086e;
-	--schedule-row-2: #1b054d;
-	--schedule-text-color: #f2fcff;
-	--schedule-time-color: #4CC9F0;
+	--schedule-row-1: #789F90;;
+	--schedule-row-2: #496f60;
 
 	--width: 60%;
 	--gutter: calc((100% - var(--width)) / 2);
@@ -198,38 +194,63 @@ img {
 
 #schedule {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
-	align-items: flex-start;
+	align-items: center;
 	flex-wrap: wrap;
-	color: var(--schedule-text-color);
 }
 
 #schedule table {
 	border-spacing: 0px;
 	margin: 10px;
 	flex-grow: 1;
+	display: none;
+	transition: height 500ms ease;
+}
+
+#schedule label {
+	font-weight: bolder;
+	font-size: larger;
+	letter-spacing: 2px;
+	color: var(--secondary-color);
+}
+
+#schedule label::after {
+	font-family: "Font Awesome 6 Free"; 
+	font-weight: 900; 
+	content: " \f107";
+}
+
+#schedule input.show-schedule {
+	display: none;
+}
+
+#schedule input.show-schedule:checked + label::after {
+	content: " \f106";
+}
+
+#schedule input.show-schedule:checked ~ table {
+	display: block;
 }
 
 #schedule tr {
 	background-color: var(--schedule-row-1);
 }
 
-#schedule tr:nth-child(2n+1) {
+#schedule tr.details {
 	background-color: var(--schedule-row-2);
+	font-size: smaller;
+	text-align: left;
 }
 
-#schedule tr:first-child {
-	background-color: var(--schedule-header);
-	color: var(--schedule-header-color);
+#schedule thead tr {
+	background-color: var(--button-bg);
+	color: var(--main-accent-color);
 }
 
 #schedule td,
 #schedule th {
 	padding: 10px;
-}
-
-#schedule td:first-child {
-	color: var(--schedule-time-color);
 }
 
 #schedule em {
