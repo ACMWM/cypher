@@ -144,6 +144,14 @@ a {
 	font-size: 150%;
 }
 
+.button.small {
+	padding: 15px;
+	border-radius: 10px;
+	border-bottom: solid 5px var(--secondary-color);
+	margin: 7px;
+	font-size: 100%;
+}
+
 img {
 	/*: solid 2px var(--grey-light);*/
 	padding: 5px;
