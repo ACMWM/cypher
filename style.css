@@ -9,7 +9,7 @@
 	--text-bold-color: #f4f0ff;
 	--secondary-color: #789F90;
 	--background: #115740;
-	--background-sheer: #115740B3;
+	--background-sheer: #183028B3;
 	--faq-bg: #3A0CA3;
 	--faq-text-color: #f4f0ff;
 	--faq-heading: #f72585;
@@ -323,7 +323,6 @@ img {
 }
 
 .main_menu {
-	flex-direction: row;
 	top: 0;
 	left: 0;
 	position: sticky;
@@ -391,7 +390,7 @@ img {
 		left: 0;
 		position: absolute;
 		flex-basis: 100%;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: stretch;
 		justify-content: flex-start;
 		transform: scale(1, 0);
