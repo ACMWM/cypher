@@ -18,16 +18,16 @@ and edit that year's link in `previous.html`.
 This means all links on your page should be relative, so that they can continue
 to function once copied to a separate directory.
 
-## Tabletop.js
-We include `tabletop.js` to allow the cypher chair the ability to easily update
+## PapaParse
+We include `papaparse.min.js` to allow the hackathon team the ability to easily update
 the schedule without input from the webmaster.
 
 It requires you to setup a Google Sheet with a specific format and
-publish it to the web. You can then replace the `key` url in `script.js` with
-the URL to your new sheet, appending `/pubhtml`.
+publish it to the web. You can then replace the `SCHEDULE` url in `script.js` with
+the URL to your new sheet. This URL should be the one you get when you select Share >> Publish to the Web >> CSV format. 
 
-The required format is very simple, just columns for `date`, `time`, `name`, and
-`room`. `date` should be either `friday`, `saturday` or `sunday`, but the other
+The required format is very simple, just columns for `Date`, `Time`, `Title`, `Location`, and
+`Details`. `Date` should be either `Friday`, `Saturday` or `Sunday`, but the other
 fields are freeform text. Make sure to order the events in the order they should
 appear on the schedule.
 

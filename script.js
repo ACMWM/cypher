@@ -1,3 +1,6 @@
+// Add the link to the schedule sheet published in CSV format
+const SCHEDULE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ85UWX8YgueGqmEsfdwoFKlozGIuMe6zmlSpdV92TtOa-2L0b-FGrRGLoTs5x5hfq4S2YKvpKWYfjM/pub?gid=0&single=true&output=csv";
+
 function parse(file, options) {
 	return new Promise((complete, error) => {
 		Papa.parse(file, { ...options, complete, error });
@@ -30,13 +33,12 @@ function EventElements(data) {
 
 async function renderSchedule() {
 	const {data} = await parse(
-		"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ85UWX8YgueGqmEsfdwoFKlozGIuMe6zmlSpdV92TtOa-2L0b-FGrRGLoTs5x5hfq4S2YKvpKWYfjM/pub?gid=0&single=true&output=csv",
+		SCHEDULE,
 		{
 			download: true,
 			header: true,
 		}
 	);
-	data.sort((a, b) => new Date(a).getTime() - new Date(b).getTime());
 	const dayTables = new Map();
 	for (let event of data) {
 		const day = event.Date.toLowerCase();
