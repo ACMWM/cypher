@@ -78,7 +78,12 @@ async function renderPrizesAndHardware() {
 			const caption = document.createElement('figcaption');
 			caption.innerText = item["Image Label"];
 			fig.append(img, caption);
-			parent.append(fig);
+			const andMore = parent.querySelector('.and-more');
+			if (andMore) {
+				parent.insertBefore(fig, andMore)
+			} else {
+				parent.append(fig)
+			}
 		}
 	}
 }
