@@ -28,7 +28,7 @@ function EventElements(data) {
 	return [info, detailsRow];
 }
 
-(async function () {
+async function renderSchedule() {
 	const {data} = await parse(
 		"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ85UWX8YgueGqmEsfdwoFKlozGIuMe6zmlSpdV92TtOa-2L0b-FGrRGLoTs5x5hfq4S2YKvpKWYfjM/pub?gid=0&single=true&output=csv",
 		{
@@ -50,6 +50,41 @@ function EventElements(data) {
 			console.log(event)
 		}
 	}
-	
+}
+
+const ITEM_MAP = {
+	Prize: "prize-images",
+	Hardware: "hardware-images",
+}
+
+async function renderPrizesAndHardware() {
+	const {data} = await parse(
+		"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ85UWX8YgueGqmEsfdwoFKlozGIuMe6zmlSpdV92TtOa-2L0b-FGrRGLoTs5x5hfq4S2YKvpKWYfjM/pub?gid=1682360223&single=true&output=csv",
+		{
+			download: true,
+			header: true,
+		}
+	);
+
+	document.querySelectorAll('.loading').forEach(x => x.remove());
+
+	for (let item of data) {
+		let id = ITEM_MAP[item["Type"]];
+		let parent = id && document.getElementById(id);
+		if (parent) {
+			const fig = document.createElement("figure");
+			const img = document.createElement("img");
+			img.setAttribute("src", item["Image URL"]);
+			const caption = document.createElement('figcaption');
+			caption.innerText = item["Image Label"];
+			fig.append(img, caption);
+			parent.append(fig);
+		}
+	}
+}
+
+(async function () {
+	renderPrizesAndHardware();
+	renderSchedule();
 })();
 
